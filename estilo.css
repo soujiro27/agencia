@@ -13,7 +13,7 @@
 body
 {
 	/*background: #f6f6f6;*/
-	background: #008fd5;
+	background: #3498db;
 	color: #2f2f2f;
 	font-size: 16px;
 	margin: 0;
@@ -30,21 +30,21 @@ header
 header figure
 {
 	background: white;
-	width:23%;
-	padding: .5em;
+	border-radius: 0 3em 3em 0;
 	margin: 0;
-	border-radius: 0 3em 3em 0
+	padding: .5em;
+	width:23%;
 }
 
 header figure#avatar
 {
-	border-radius: 0px;
-	width: 60px;
 	background: none;
-	vertical-align: top;
+	border-radius: 0px;
+	float:right;
 	margin:7px 10px 0 0;
 	padding: 0;	
-	float:right;
+	vertical-align: top;
+	width: 60px;
 }
 
 header figure#avatar img,
@@ -90,7 +90,7 @@ header nav ul li a
 	font-size: 1.5em;
 	text-decoration: none;
 	display: block;
-	color:white;
+	color:#ecf0f1;
 	-webkit-transition:all .5s;
 }
 
@@ -112,10 +112,10 @@ section#cuerpo h1
 	text-align: center;
 	font-size: 2em;
 	font-weight: normal;
-	margin: 5px 0 0 0;
+	margin: 20px 0 0 0;
 }
 
-section#cuerpo article#grafica figure#grafico_imagen
+section#cuerpo article#grafica figure#grafico_imagen 
 {
 	margin: 0;
 	padding: 0;
