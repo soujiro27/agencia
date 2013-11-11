@@ -216,3 +216,23 @@ section#servicios article#texto_servicios p strong
 	display: block;	
 	color: #8fbc52;
 }
+
+
+/*----------empieza estilo del hotel------------*/
+
+section#busqueda form
+{
+	background: #3498db;
+	color: white;
+	font-weight: bold;
+	width: 40%;
+	border: none;
+	margin: 60px 10px;
+	padding: 8px;
+}
+
+section#busqueda form label
+{
+	display: block;
+}
+
