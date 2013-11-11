@@ -115,6 +115,12 @@ section#cuerpo h1
 	margin: 5px 0 0 0;
 }
 
+section#cuerpo article#grafica figure#grafico_imagen
+{
+	margin: 0;
+	padding: 0;
+}
+
 section#cuerpo article#grafica figure img
 {
 	width: 425px;
