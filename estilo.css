@@ -285,5 +285,80 @@ section#contenido_personal article#telefonos span#skype:before
 	content: "\e600";
 }
 
+/*---------------empieza la seccion la de hoteles -------*/
+
+
+section#busqueda form,
+section#busqueda figure
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+section#busqueda figure
+{
+	margin: 0;
+	width: 70%;
+}
+
+section#busqueda figure img
+{
+	width: 100%;
+}
+
+section#busqueda form
+{
+	background: #f49900;
+	border-radius: 0 15px 15px 15px;
+	margin: 0 35px 0 15px;
+	padding:15px;
+	position: relative;
+	width: 20%;
+
+}
+
+section#busqueda form button
+{
+	background: #3498db;
+	border-radius: 50%;
+	border:2px solid white;
+	color:white;
+	cursor:pointer;
+	display: block;
+	font-weight: bold;
+	height: 80px;
+	margin: 20px 70px 0 70px;
+	text-align: center;
+	width: 80px;
+}
+
+section#busqueda form h2
+{
+	background: #3498db;
+	border-radius: 10px 10px 0 0;
+	color: white;
+	left: 0;
+	padding:8px;
+	position: absolute;
+	top: -63px;
+
+}
+
+section#busqueda form input
+{
+	padding: 8px;
+	border:none;
+	border-radius: 7px;
+	text-align: center;
+	width: 90%;
+
+
+section#busqueda h1
+{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 2em;
+	margin: 10px 0;
+	text-align: center;
+}
 
 

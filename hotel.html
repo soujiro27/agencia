@@ -1,56 +1,43 @@
-<!doctype <html>
+<!doctype html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Hoteles pegaso</title>
+	<title>Busqueda de Hotel</title>
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-	<section id="contenido">
-<header>
-		<figure id="logo">
-		<img src="img/logo.png" alt="">
-		<figcaption>egaso</figcaption>
-		</figure>	
+<section id="contenido">
+	<header>
+		<a href=""><img src="img/logo.png"/></a>
 		<nav>
-				<ul>
-					<li><a href="crucero.html">Crucero</a></li>
-					<li><a href="hotel.html">Hoteles</a></li>
-					<li><a href="paquetes.html">Paquetes</a></li>
-					<li><a href="tours.html">Tours</a></li>
-					<li><a href="transportes.html">Transportes</a></li>
-					<li><a href="vtp.html">Vtp</a></li>
-				</ul>
-			</nav>	
-			<figure id="avatar">
-				<img src="img/avatar.jpg" />
-			</figure>
-</header>
-	<section id="busqueda">
-		<article>
-			<form>
-	<h1>Busqueda de hoteles</h1>
-				<input type="text"placeholder="Ingresa Destino" required x-webkit-speech speech error id="busqueda_voz">
-				<label>Fecha de llegada:</label>
-				<input type="date">
-				<label>Dias:</label>
-				<input type="number">
-				<label>Fecha de regreso</label>
-				<input type="date" disabled="true">
+			<ul>
+				<li><a href="" id="hotel"></a><p>Hotel</p></li>
+				
+				<li><a href="" id="transporte"></a><p>Vuelos</p></li>
 
-				<button type="submit">consultar</button>
-			</form>
-		</article>
-		<article>
-			<figure>
-			<img src="img/iberostar.jpg">
-			<img src="img/Mayan.png">
-			<img src="img/real.jpg">
-			</figure>
-		</article>
-	</section>
-<script src="js/jquery.js"></script>
-<script src="js/funciones.js"></script>
+				<li><a href="" id="paquete"></a><p>Paquete</p></li>
+				
+				<li><a href="" id="vtp"></a><p>Vtp</p></li>
+				
+				<li><a href="" id="tours"></a><p>Tours</p></li>
+				
+				<li><a href="" id="crucero"></a><p>crucero</p></li>
+			</ul>
+		</nav>
+		<figure><img src="img/avatar.jpg" /></figure>
+</header>
+
+<section id="busqueda">
+	<h1>Hoteles</h1>
+	<form action="" id="busqueda_hotel">
+		<h2>Busca tu destino</h2>
+		<input type="text" placeholder="ingresa tu destino" required>
+		<button type="submit">Buscar</button>
+	</form>
+	<figure><img src="img/agencia.jpg"/></figure>
+
+</section>
 </section>
 </body>
 </html>
