@@ -336,7 +336,7 @@ section#resultados_busqueda
 
 section#resultados_busqueda article#img_hotel img
 {
-	width: 300px;
+	width: 400px;
 }
 
 
@@ -351,7 +351,69 @@ section#resultados_busqueda article#categoria figure
 	margin:10px;
 }
 
+section#resultados_busqueda article#servicios
+{
+	vertical-align: top;
+	text-align: center;
+}
+
+section#resultados_busqueda article#servicios figure
+{
+	margin:10px;
+}
+
 section#resultados_busqueda article#servicios img
 {
 	width: 50px;
+}
+
+
+section#resultados_busqueda section#cuadro_foto
+{
+	width: 430px;
+	border:3px solid red;
+}
+
+section#resultados_busqueda section#cuadro_foto,
+section#resultados_busqueda section#cuadro_servicios,
+section#resultados_busqueda section#cuadro_servicios article#descripcions
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+section#resultados_busqueda section#cuadro_foto article#categoria
+{
+	text-align: center;
+}
+
+section#resultados_busqueda section#cuadro_foto figure#imagen_hotel
+{
+	margin:10px;
+}
+
+
+section#resultados_busqueda section#cuadro_servicios
+{
+	width: 750px;
+	border:3px solid blue;
+	
+}
+
+section#resultados_busqueda section#cuadro_servicios article#mapa img
+{
+	width: 260px;
+}
+
+
+section#resultados_busqueda section#cuadro_servicios article
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+section#resultados_busqueda section#cuadro_servicios article#descripcion p
+{
+	width: 290px;
+	text-align: justify;
 }
