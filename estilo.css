@@ -327,16 +327,18 @@ section#busqueda h3
 {
 	margin:0;
 	padding: .7em;
+	font-weight: normal;
 }
+
 
 section#resultados_busqueda
 {
-	border:3px solid red;
+	margin: 30px 0;
 }
 
 section#resultados_busqueda article#img_hotel img
 {
-	width: 400px;
+	width: 247px;
 }
 
 
@@ -370,8 +372,10 @@ section#resultados_busqueda article#servicios img
 
 section#resultados_busqueda section#cuadro_foto
 {
-	width: 430px;
-	border:3px solid red;
+	width: 310px;
+	background: #f49000;
+	border-radius: 25px;
+	margin: 0 10px;
 }
 
 section#resultados_busqueda section#cuadro_foto,
@@ -387,17 +391,37 @@ section#resultados_busqueda section#cuadro_foto article#categoria
 	text-align: center;
 }
 
+section#resultados_busqueda section#cuadro_foto article#categoria figure
+{
+	background: white;
+	border-radius: 50%;
+	text-align: center;
+	width: 37px;
+	height: 34px;
+}
+
 section#resultados_busqueda section#cuadro_foto figure#imagen_hotel
 {
 	margin:10px;
+	text-align: center;
+	background: white;
+	border-radius: 8px;
+	padding: 5px;
 }
 
 
 section#resultados_busqueda section#cuadro_servicios
 {
-	width: 750px;
-	border:3px solid blue;
-	
+	width: 865px;
+	background: #d8e5f7;
+	border-radius: 25px;
+	margin:0 10px 30px 10px;
+}
+
+section#resultados_busqueda section#cuadro_servicios article#direccion_hotel p
+{
+	margin: 0;
+	padding-left: 25px;
 }
 
 section#resultados_busqueda section#cuadro_servicios article#mapa img
@@ -412,8 +436,27 @@ section#resultados_busqueda section#cuadro_servicios article
 	vertical-align: top;
 }
 
+section#resultados_busqueda section#cuadro_servicios article#bolita_cotiza
+{
+	background: #f49000;
+	border:3px solid white;
+	border-radius: 50px;
+	color: white;
+	font-weight: bold;
+	height: 70px;
+	margin: 20px 5px;
+	text-align: center;
+	width: 70px;
+}
+
+section#resultados_busqueda section#cuadro_servicios article#bolita_cotiza p
+{
+	margin:24px auto 16px auto;
+}
+
 section#resultados_busqueda section#cuadro_servicios article#descripcion p
 {
-	width: 290px;
+	width: 310px;
 	text-align: justify;
 }
+
