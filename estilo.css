@@ -65,8 +65,6 @@ header a img
 header figure
 {
 	margin:5px 10px 0 0;
-	float: right;
-
 }
 
 header figure img
@@ -287,78 +285,73 @@ section#contenido_personal article#telefonos span#skype:before
 
 /*---------------empieza la seccion la de hoteles -------*/
 
-
-section#busqueda form,
-section#busqueda figure
-{
-	display: inline-block;
-	vertical-align: middle;
-}
-
-section#busqueda figure
-{
-	margin: 0;
-	width: 70%;
-}
-
-section#busqueda figure img
-{
-	width: 100%;
-}
-
-section#busqueda form
+section#busqueda article#formulario 
 {
 	background: #f49900;
-	border-radius: 0 15px 15px 15px;
-	margin: 0 35px 0 15px;
-	padding:15px;
-	position: relative;
-	width: 20%;
-
+	border-radius:50px;
+	box-shadow: 2px 2px 5px #34495e;
+	height: 100px;
+	width: 400px;
+	margin: 2% 30%;
 }
 
-section#busqueda form button
+section#busqueda article#formulario button
 {
 	background: #3498db;
-	border-radius: 50%;
-	border:2px solid white;
+	border-radius: 50px;
+	border:3px solid white;
 	color:white;
-	cursor:pointer;
-	display: block;
+	cursor: pointer;
+	font-size: 18px;
 	font-weight: bold;
-	height: 80px;
-	margin: 20px 70px 0 70px;
-	text-align: center;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 }
 
-section#busqueda form h2
+section#busqueda article#formulario input
 {
-	background: #3498db;
-	border-radius: 10px 10px 0 0;
-	color: white;
-	left: 0;
-	padding:8px;
-	position: absolute;
-	top: -63px;
-
-}
-
-section#busqueda form input
-{
-	padding: 8px;
 	border:none;
-	border-radius: 7px;
-	text-align: center;
-	width: 90%;
+	width: 250px;
+	padding: .5em;
+	border-radius: 20px;
+}
 
 
 section#busqueda h1
 {
-	font-family: 'Varela Round', sans-serif;
-	font-size: 2em;
-	margin: 10px 0;
 	text-align: center;
+	font-size: 1.5em
+}
+
+section#busqueda h3 
+{
+	margin:0;
+	padding: .7em;
+}
+
+section#resultados_busqueda
+{
+	border:3px solid red;
+}
+
+section#resultados_busqueda article#img_hotel img
+{
+	width: 300px;
 }
 
 
+section#resultados_busqueda article#categoria img
+{
+	width: 30px;
+}
+
+section#resultados_busqueda article#categoria figure
+{
+	display: inline-block;
+	margin:10px;
+}
+
+section#resultados_busqueda article#servicios img
+{
+	width: 50px;
+}
