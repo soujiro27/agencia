@@ -41,9 +41,11 @@ if ($row = $db->fetch_array($consulta))
      	$html=$html."<figure><img src=img/wifi.png><figcaption>Internet</figcaption></figure>";
      }
      $html=$html."</article><article id=descripcion><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, ipsum, iste, optio exercitationem itaque placeat fugit numquam ipsam ullam porro quo temporibus et veniam esse possimus blanditiis veritatis aliquam molestiae.</article>";
-     $html=$html."<article id=mapa><figure><img src=img/morelos/mapa.gif></figure></article><article id=bolita_cotiza onclick=busqueda_habitacion(".$row['id_hab'].")><p>Revisar</p></article>";
+     $html=$html."<article id=mapa><figure><img src=img/morelos/mapa.gif></figure></article><article id=bolita_cotiza onclick=busqueda_habitacion(".$row['id'].")><p>Revisar</p></article>";
 
      $html=$html."<article id=direccion_hotel><p>".$row['direccion']."</p></article></section>";
+
+     
 
 
    }while($row = $db->fetch_array($consulta)); 

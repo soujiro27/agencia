@@ -460,3 +460,93 @@ section#resultados_busqueda section#cuadro_servicios article#descripcion p
 	text-align: justify;
 }
 
+/*---------------busqueda por cuarto-----------*/
+
+section#resultados_cuartos section#cuartos_hotel
+{
+	background: #d8e5f7;
+	border:3px solid #008fd5;
+	border-radius: 10px;
+	margin: 15px;
+	width: 70%;
+	display: inline-block;
+}
+
+
+section#resultados_cuartos  section#cuartos_hotel figure
+{
+	width: 250px;
+	display: inline-block;
+}
+
+section#resultados_cuartos section#cuartos_hotel figure img
+{
+	width: 100%;
+}
+
+section#resultados_cuartos section#cuartos_hotel article#tipo_habitacion
+{
+	background: #f49000;
+	border-radius: 50%;
+	display: inline-block;
+	height: 60px;
+	margin: 15px;
+	text-align: center;
+	vertical-align: top;
+	width: 60px;
+	cursor: pointer;
+}
+
+section#resultados_cuartos section#texto_cuartos
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
+section#resultados_cuartos section#texto_cuartos article#descripcion_cuarto
+{
+	text-align: justify;
+	font-size: 14px;
+}
+
+section#resultados_cuartos section#texto_cuartos article#precio_cuarto,
+section#resultados_cuartos section#texto_cuartos article#cantidad_cuartos
+{
+	background: #f49000;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 10px;
+	padding: 3px;
+	text-align: center;
+	width: 110px;
+
+} 
+
+
+section#resultados_cuartos section#texto_cuartos article#precio_cuarto p,
+section#resultados_cuartos section#texto_cuartos article#cantidad_cuartos p
+{
+	margin: 2px;
+	color: white;
+	font-weight: bold;
+	text-shadow:2px 2px 2px black;
+}
+
+
+section#resultados_cuartos section#cuartos_hotel
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+section#resultados_cuartos section#api_twiter
+{
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+
+
+
