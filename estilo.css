@@ -9,6 +9,17 @@
 	font-style: normal;
 }
 
+@media print
+{
+	header{
+		display: none;
+	}
+	body
+	{
+		font-size: 11px;
+	}
+}
+
 body
 {
 	/*background: #f6f6f6;*/
@@ -552,43 +563,61 @@ section#resultados_cuartos section#api_twiter
 
 
 
-section#formularioRegistro form 
+section#formularioRegistro section#form 
 {
-	width: 55%;
-	border:3px solid #e74c3c;
-	padding: 3%;
 	border-radius: 15px;	
+	padding: 3%;
+	width: 55%;
 }
 
-section#formularioRegistro form input
+section#formularioRegistro section#form button
+{
+	background: #f5d313;
+	border-radius: 7px;
+	border:none;
+	color: black;
+	display: block;
+	margin-top: 30px;
+	padding: 15px;
+	
+}
+
+
+section#formularioRegistro section#form input
 {
 	border:none;
 	border-radius: 10px;
 	padding: 5px;
 }
 
-section#formularioRegistro form input[type="date"]
+section#formularioRegistro section#form input[type="date"]
 {
-	width: 150px;
-	display: inline-block;
-	border:none;
 	background: #58d68d;
-	color: white;
-	padding: 1%;
 	border-radius: 8px;
+	border:none;
+	color: white;
+	display: inline-block;
 	font-weight: bold;
+	padding: 1%;
+	width: 150px;
 	
 }
 
-section#formularioRegistro form input#nombreCliente
+section#formularioRegistro section#form input#nombreCliente,
+section#formularioRegistro section#form input#DirecccionCliente,
+section#formularioRegistro section#form input#telefonoCliente,
+section#formularioRegistro section#form input#correoCliente,
+section#formularioRegistro section#form input#ciudadDestino,
+section#formularioRegistro section#form input#ciudadOrigen
 {
 	background: #415b76;
-	width: 400px;
 	color: white;
 	font-weight: bold;
+	width: 400px;
 }
 
-section#formularioRegistro form input#nombreCliente:focus
+section#formularioRegistro section#form input#nombreCliente:focus,
+section#formularioRegistro section#form input#DirecccionCliente:focus
 {
 	background: white;
 	border:3px solid #415b76;
@@ -597,27 +626,28 @@ section#formularioRegistro form input#nombreCliente:focus
 }
 
 
-section#formularioRegistro form label
+section#formularioRegistro section#form label
 {
 	display: block;
+	display: inline-block;
 	margin-top: 25px;
 	width: 290px;
-	display: inline-block;
 }
 
 
-section#formularioRegistro form button
+section#formularioRegistro section#form label#fechaRegreso
 {
-	display: block;
+	margin-left: 40px;	
+	width: 180px;
 }
 
 
-section#formularioRegistro form select
+section#formularioRegistro section#form select
 {
-	border:none;
 	background: #48c9b0;
-	color: white;
-	padding: 1%;
 	border-radius: 8px;
+	border:none;
+	color: white;
 	font-weight: bold;
+	padding: 1%;
 }

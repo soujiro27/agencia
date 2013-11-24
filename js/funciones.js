@@ -33,10 +33,32 @@ function busqueda_habitacion(id_hab)
 
 function cotiza(precio)
 {
-	console.log(precio);
+$("#resultados_cuartos").slideUp(500);
+var $html="<section id=form><label>Nombre del Titular de la Reservacion</label><input type=text required id=nombreCliente><label>Direccion</label>";
+$html=$html+"<input type=text required id=DirecccionCliente><label>Telefono</label>";
+$html=$html+"<input type=text required id=telefonoCliente><label>E-mail</label>";
+$html=$html+"<input type=email  id=correoCliente><label>Ciudad de Origen</label><input type=text value=México, D.f. disabled=True id=ciudadOrigen>";
+$html=$html+"<label>Ciudad de Destino</label><input type=text disabled=True id=ciudadDestino><label >Fecha de Salida</label><input type=date id=fechaSalida>";
+$html=$html+"<label id=fechaRegreso>Fecha de Regreso</label><input type=date id=fechaVuelta><label>Tipo de Pago</label>";
+$html=$html+"<select><option value=1>Efectivo</option><option value=2>Tarjeta</option><option value=3>Cheque</option><option value=3>Cotizacion</option></select><button id=confirmarPago onclick=total("+precio+");>Confirmar</button></section>";
+$html=$html+"<p>Hotel</p><p id=costoHotel>$</p><p>Impuestos</p><p id=impuestos>$</p>";
+$html=$html+"<p>Total</p><p id=totalFinal>$</p>";
+$("#formularioRegistro").html($html);
 }
 
 
+function total(precio)
+{
 
+var $salida=new Date($("#fechaSalida").val());
+var $regreso=new Date($("#fechaVuelta").val());
+$salida=parseInt($salida.getDate());
+$regreso=parseInt($regreso.getDate());
+var $total=($regreso-$salida)*precio;
+$("#costoHotel").text("$"+$total);
+$("#impuestos").text("$"+$total*.15);
+$("#totalFinal").text("$"+$total+$total*.15);
+window.print();
+}
 
 
