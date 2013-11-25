@@ -18,6 +18,10 @@
 	{
 		font-size: 11px;
 	}
+	table
+	{
+		display: none;
+	}
 }
 
 body
@@ -563,14 +567,14 @@ section#resultados_cuartos section#api_twiter
 
 
 
-section#formularioRegistro section#form 
+section.form 
 {
 	border-radius: 15px;	
 	padding: 3%;
 	width: 55%;
 }
 
-section#formularioRegistro section#form button
+section.form button
 {
 	background: #f5d313;
 	border-radius: 7px;
@@ -583,14 +587,14 @@ section#formularioRegistro section#form button
 }
 
 
-section#formularioRegistro section#form input
+section.form input
 {
 	border:none;
 	border-radius: 10px;
 	padding: 5px;
 }
 
-section#formularioRegistro section#form input[type="date"]
+section.form input[type="date"]
 {
 	background: #58d68d;
 	border-radius: 8px;
@@ -603,12 +607,12 @@ section#formularioRegistro section#form input[type="date"]
 	
 }
 
-section#formularioRegistro section#form input#nombreCliente,
-section#formularioRegistro section#form input#DirecccionCliente,
-section#formularioRegistro section#form input#telefonoCliente,
-section#formularioRegistro section#form input#correoCliente,
-section#formularioRegistro section#form input#ciudadDestino,
-section#formularioRegistro section#form input#ciudadOrigen
+section.form input#nombreCliente,
+section.form input#DirecccionCliente,
+section.form input#telefonoCliente,
+section.form input#correoCliente,
+section.form input#ciudadDestino,
+section.form input#ciudadOrigen
 {
 	background: #415b76;
 	color: white;
@@ -616,8 +620,8 @@ section#formularioRegistro section#form input#ciudadOrigen
 	width: 400px;
 }
 
-section#formularioRegistro section#form input#nombreCliente:focus,
-section#formularioRegistro section#form input#DirecccionCliente:focus
+section.form input#nombreCliente:focus,
+section.form input#DirecccionCliente:focus
 {
 	background: white;
 	border:3px solid #415b76;
@@ -626,7 +630,7 @@ section#formularioRegistro section#form input#DirecccionCliente:focus
 }
 
 
-section#formularioRegistro section#form label
+section.form label
 {
 	display: block;
 	display: inline-block;
@@ -635,14 +639,14 @@ section#formularioRegistro section#form label
 }
 
 
-section#formularioRegistro section#form label#fechaRegreso
+ section.form label#fechaRegreso
 {
 	margin-left: 40px;	
 	width: 180px;
 }
 
 
-section#formularioRegistro section#form select
+section.form select
 {
 	background: #48c9b0;
 	border-radius: 8px;
@@ -650,4 +654,278 @@ section#formularioRegistro section#form select
 	color: white;
 	font-weight: bold;
 	padding: 1%;
+}
+
+
+
+/*--------------fomulario de transportes--------------*/
+
+section.formTransporte
+{
+	color: #2c3e50;
+	display: inline-block;
+	margin: 10px;
+	width: 40%;
+}
+
+section.formTransporte button
+{
+	background: #34495e;
+	border-radius: 50%;
+	border:4px solid #e67e22;
+	color: white;
+	display: block;
+	height: 80px;
+	text-align: center;
+	width: 80px;
+}
+
+section.formTransporte select
+{
+	background: #48c9b0;
+	border-radius: 5%;
+	border:none;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	margin:0 50px 60px 0;
+	padding: 12px;
+	text-align: center;
+	width: 35%;
+}
+
+section.formTransporte input[type="date"]
+{
+	background: #58d68d;
+	border-radius: 12px;
+	border:none;
+	color: white;
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 40px;
+	padding: 8px;
+	width: 200px;
+	
+}
+
+
+section.formTransporte label
+{
+	border-radius: 8px;
+	border:2px solid orange;
+	box-shadow: 2px 2px 3px #2c3e50;
+	display: inline-block;
+	margin-right: 40px;
+	padding: 5px;
+	width: 180px;
+}
+
+
+section.formTransporte input[type="text"]
+{
+	border-radius: 10px;
+	border:3px solid #2c3e50;
+	margin-bottom: 20px;
+	padding: 7px;
+	width: 200px;
+}
+
+
+section#tablaResultados
+{
+	-webkit-transition:all 1s;
+	display: inline-block;
+	vertical-align: top;
+	width: 55%;
+	margin-top: 40px;
+}
+
+section#tablaResultados table th
+{
+	background: #2c3e50;
+	color: white;
+	width: 90px;
+}
+
+section#tablaResultados table tr:nth-child(2)
+{
+	background: #47a1de;
+	color: white;
+}
+
+section#tablaResultados table button
+{
+	border-radius: 8px;
+}
+
+
+/*-------------registro ticket-----------*/
+
+section#registroTicket
+{
+	display: inline-block;
+	margin:0 20px;
+	width: 40%;
+}
+
+
+section#registroTicket label
+{
+	display: inline-block;
+	width: 200px;
+}
+
+section#registroTicket input
+{
+	border-radius: 15px;
+	border:3px solid #2c3e50;
+	margin-bottom: 15px;
+	padding: 6px;
+	width:300px;
+}
+
+
+section#registroTicket button
+{
+	background: #d35400;
+	border-color: #d35400;
+	border-radius: 8px;
+	color: white;
+	display: block;
+	margin: 20px; 
+	padding: 8px;
+	text-align: center;
+	width: 120px;
+}
+
+
+/*----------------estilo del formulario de paquetes-----------------*/
+
+section#formularioAvion
+{
+	width:60%;
+	padding: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+section#formularioAvion select
+{
+	background: #48c9b0;
+	border-radius: 10px;
+	border:none;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	margin:0 50px 60px 0;
+	padding: 12px;
+	text-align: center;
+	width: 35%;
+}
+
+section#formularioAvion input[type="date"]
+{
+	background: #58d68d;
+	border-radius: 12px;
+	border:none;
+	color: white;
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 40px;
+	padding: 8px;
+	width: 200px;
+	
+}
+
+section#formularioAvion label
+{
+	display: block;
+}
+
+section#formularioAvion article#cuadrosFechas
+{
+	
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+}
+
+section#formularioAvion article#cuadroOrigen
+{
+	
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+}
+
+section#formularioAvion article#cuadroOrigen input
+{
+	-webkit-appearance:none;
+	background:white; 
+	border-radius: 10px;
+	border:2px solid #2ecc71;
+	box-shadow: none;
+	color: #2ecc71;
+	margin: 10px 0;
+	padding: 5px;
+}
+
+section#formularioAvion button
+{
+	background: #e74c3c;
+	border-radius: 10px;
+	border:none;
+	color:#ffffff;
+	font-weight: bold;
+	padding: 15px;
+	text-align: center;
+	width: 110px;
+}
+
+section#informesViaje
+{
+	padding: 7px;
+	width: 30%;
+	display: inline-block;
+	background: #34495e;
+	color: white;
+	border-radius: 10px;
+	margin:20px;
+}
+
+section#informesViaje label
+{
+	background: white;
+	border-radius: 10px;
+	border: none;
+	color: #34495e;
+	display: inline-block;
+	padding: 4px;
+	width: 80px;
+	margin:10px 10px 0 0;
+}
+
+section#informesViaje p
+{
+	width: 200px;
+	display: inline-block;
+}
+
+section#informesViaje input
+{
+	width: 200px;
+	padding: 5px;
+	border-radius: 15px;
+	border:none;
+}
+
+
+section#informesViaje button
+{
+	display: block;
+	border:none;
+	padding: 5px;
+	border-radius: 8px;
+	margin: 20px;
 }
